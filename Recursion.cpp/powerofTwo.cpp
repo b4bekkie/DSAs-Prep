@@ -1,18 +1,29 @@
 #include <iostream>
 using namespace std ;
 
-int twoPower( int num ) {
-   
-   if(num ==0) {
-    return 1;
-   }
+bool poweroftwo(  int num ) {
 
-    int ans = 2*twoPower(num-1);
+    if(num % 2 == 1) {
+
+   return false;
+    }
+    return true;
+
+
+
+
 
 }
+
 int main() {
-   int num = 3;
-    int ans = twoPower(num);
-    cout << ans;
+  
+
+
+poweroftwo(40) ? cout << "yes" : cout << "no";
+
+
+
+
+
 
 }
